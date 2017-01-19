@@ -1,21 +1,16 @@
-(function($){
-  $(function(){
+$(document).ready(function() {
+    $(window).scroll(function() {
+        $('.fade-on-scroll').each(function(i) {
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-    $('.profile-picture')
-    .transition({
-        animation: 'fade in',
-        duration: '1s'
-    })
+            if (bottom_of_window > 0.9*bottom_of_element) {
+                $(this).animate({'opacity': '1'}, 1000);
+            }
+        });
+    });
+});
 
-    $('.name-header')
-    .transition({
-        animation: 'fade in',
-        duration: '1s'
-    })
-
-    $('.education-header')
-    .transition({
-        animation: 'fade in',
-        duration: '3s'})
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+$(document).ready(function() {
+    $('.fade-on-load').animate({'opacity': '1'}, 3000);
+});
