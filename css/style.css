@@ -12,3 +12,40 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+.social-media-icon {
+
+}
+
+body {
+    background-color:  #03385F;
+}
+
+#event-description {
+    color: white;
+}
+
+/*Fill Screen*/
+div.fill-screen {
+    height: 100vh;
+}
+
+div.info-quote {
+    float: left;
+}
+
+.learnit-card {
+    background-color: #03385F;
+}
+
+.teachit-card {
+    background-color: #03385F;
+}
+
+.fade-on-scroll {
+    opacity: 0;
+}
+
+.fade-on-load {
+    opacity: 0;
+}
