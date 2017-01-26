@@ -49,3 +49,11 @@ div.info-quote {
 .fade-on-load {
     opacity: 0;
 }
+
+#schedule-table {
+    border-color: transparent;
+}
+
+#schedule-item {
+    border-color: #03385F;
+}
